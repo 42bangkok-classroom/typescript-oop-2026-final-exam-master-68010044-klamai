@@ -18,6 +18,9 @@ import { ApiExceptionFilter } from './common/api-exception.filter';
 export class AppModule {}
 export interface ApiResponse<T> {
   success: boolean;
-  data: T | null;
+  data: {
+    "service": "purchase-api",
+    "version": "1.0.0"
+  };
   message: string;
 }

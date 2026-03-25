@@ -19,7 +19,7 @@ export class AppModule {}
 export interface ApiResponse<T> {
   success: boolean;
   data: {
-    "service": "purchase-api",
+    "service": "purchase-api"
     "version": "1.0.0"
   };
   message: string;

@@ -16,3 +16,8 @@ import { ApiExceptionFilter } from './common/api-exception.filter';
   ],
 })
 export class AppModule {}
+export interface ApiResponse<T> {
+  success: boolean;
+  data: T | null;
+  message: string;
+}
